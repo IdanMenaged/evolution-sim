@@ -7,6 +7,10 @@ from visualization.visual_object import VisualObject
 
 class AnimalVO(VisualObject):
     def __init__(self, animal_sim: Animal, show_fov: bool = False):
+        """
+        :param animal_sim: Animal object
+        :param show_fov: should program visualize fov?
+        """
         super().__init__(animal_sim)
 
         if show_fov:
@@ -29,6 +33,10 @@ class AnimalVO(VisualObject):
             self.fov = set()
 
     def draw(self) -> None:
+        """
+        draw self + fov if needed
+        :return: None
+        """
         super().draw()
         for rect in self.fov:
             rect.draw()
