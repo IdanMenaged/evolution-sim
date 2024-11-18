@@ -18,7 +18,7 @@ animal = Animal((1, 1))
 def on_draw():
     window.clear()
     VisualObject(food_sim, color=(255, 0, 0)).draw()
-    AnimalVO(animal).draw()
+    AnimalVO(animal, show_fov=True).draw()
 
     time.sleep(.5)
     animal.move((3, 1), 1)

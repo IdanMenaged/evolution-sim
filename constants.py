@@ -1,3 +1,3 @@
 GRID_SIZE=(48, 27)
 TILE_SIZE=20
-FOV_COLOR=(192, 192, 192)  # light gray
+FOV_COLOR=(192, 192, 192, 128)  # light gray

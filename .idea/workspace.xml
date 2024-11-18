@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2a1bf51-2032-4489-a6ce-ff0816301608" name="Changes" comment="del .gitignore">
-      <change afterPath="$PROJECT_DIR$/visualization/animal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/animal.py" afterDir="false" />
+    <list default="true" id="e2a1bf51-2032-4489-a6ce-ff0816301608" name="Changes" comment="show fov">
+      <change beforePath="$PROJECT_DIR$/visualization/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/animal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,13 +79,22 @@
       <option name="project" value="LOCAL" />
       <updated>1731888619969</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="show fov">
+      <option name="closed" value="true" />
+      <created>1731889791607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731889791607</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="animal moves and sees" />
     <MESSAGE value=".idea/" />
     <MESSAGE value="del .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="del .gitignore" />
+    <MESSAGE value="show fov" />
+    <option name="LAST_COMMIT_MESSAGE" value="show fov" />
   </component>
 </project>
