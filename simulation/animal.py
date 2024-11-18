@@ -4,16 +4,18 @@ from constants import GRID_SIZE
 
 
 class Animal:
-    def __init__(self, pos: tuple[int, int] = None):
+    def __init__(self, pos: tuple[int, int] = None, sight_range: int = 1):
         if pos is None:
             self.pos = (random.randint(0, GRID_SIZE[0]), random.randint(0, GRID_SIZE[1]))
         else:
             self.pos = pos
 
-    def look(self, objects: set, range: int = 1):
+        self.sight_range = sight_range
+
+    def look(self, objects: set):
         can_see = set()
         for obj in objects:
-            if abs(self.pos[0] - obj.pos[0]) <= range and abs(self.pos[1] - obj.pos[1]) <= range:
+            if abs(self.pos[0] - obj.pos[0]) <= self.sight_range and abs(self.pos[1] - obj.pos[1]) <= self.sight_range:
                 can_see.add(obj)
         return can_see
 
