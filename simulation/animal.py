@@ -1,6 +1,7 @@
 import random
 
-from constants import GRID_SIZE
+from constants import GRID_SIZE, TILE_SIZE
+from simulation.food import Food
 
 
 class Animal:
@@ -56,3 +57,19 @@ class Animal:
 
         # Print and return the new position
         self.pos = (new_x, new_y)
+
+    def determine_target(self, objects_in_range: set):
+        # is there food?
+        foods = set()
+        for obj in objects_in_range:
+            if obj is Food:
+                foods.add(obj)
+
+        if not bool(foods):
+            return random.randint(0, GRID_SIZE[0]), random.randint(0, GRID_SIZE[1])
+        else:
+            return self.find_closest_food()
+
+    def find_closest_food(self):
+        # todo: implement
+        pass

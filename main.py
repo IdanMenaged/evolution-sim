@@ -10,17 +10,17 @@ from visualization.visual_object import VisualObject
 
 window = pyglet.window.Window(GRID_SIZE[0] * TILE_SIZE, GRID_SIZE[1] * TILE_SIZE)
 
-food_sim = Food((0, 0))
+# food_sim = Food((0, 0))
 animal = Animal((1, 1))
 
 
 @window.event
 def on_draw():
     window.clear()
-    VisualObject(food_sim, color=(255, 0, 0)).draw()
+    # VisualObject(food_sim, color=(255, 0, 0)).draw()
     AnimalVO(animal, show_fov=True).draw()
 
     time.sleep(.5)
-    animal.move((3, 1), 1)
+    animal.move(animal.determine_target(set()))
 
 pyglet.app.run()
